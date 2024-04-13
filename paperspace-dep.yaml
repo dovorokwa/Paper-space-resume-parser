@@ -1,0 +1,14 @@
+image: imayab/my-deps # container image used to run your deployment
+# command: # optional command to override the container image's default command
+#   - my
+#   - command
+port: 8501 # local container port that your service is running on
+# env: # environment variables that are applied at run time
+#   - name: ENV
+#     value: VAR
+resources:
+  replicas: 1 # number of replicas used for your deployment
+  instanceType: C4 # instance type that your deployment will run on
+
+
+# gradient deployments create --name mlDep --projectId prd5op7vz --spec deployment.yaml
